@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "Blog",
+    "name": "博客",
+    "link": "https://www.yuque.com/lushi78778/blog"
+  },
+  {
+    "icon": "Cloud",
+    "name": "网盘",
+    "link": "https://pan.ewlgc.top/"
+  },
+  {
+    "icon": "Compass",
+    "name": "起始页",
+    "link": "https://home.ewlgc.top/"
+  },
+  {
+    "icon": "LaptopCode",
+    "name": "站点监测",
+    "link": "http://host.ewlgc.top/"
+  }
+]
