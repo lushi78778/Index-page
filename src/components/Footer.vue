@@ -10,6 +10,7 @@
           </span>
           {{ fullYear }}
           <a :href="siteUrl">{{ siteAnthor }}</a>
+          &nbsp;
         </span>
         <!-- 以下信息请不要修改哦 -->
         <!-- <span class="hidden">
