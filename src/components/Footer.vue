@@ -20,12 +20,12 @@
         </span> -->
         <!-- 站点备案 -->
         <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
-          &amp;
+          <!-- &amp; -->
           {{ siteIcp }}
+          &nbsp;
         </a>
         <!-- 站点网安备案 -->
         <a v-if="siteBeian"  :href="siteBeianUrl" target="_blank">
-          &amp;
           <img src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png" height="18">
           {{ siteBeian }}
         </a>
