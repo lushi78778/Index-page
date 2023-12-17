@@ -16,11 +16,6 @@
   },
   {
     "icon": "LaptopCode",
-    "name": "公共api",
-    "link": "http://api-cf.ewlgc.top/"
-  },
-  {
-    "icon": "LaptopCode",
     "name": "站点监测",
     "link": "http://host.ewlgc.top/"
   }

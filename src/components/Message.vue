@@ -48,11 +48,37 @@ const siteUrl = computed(() => {
   return url.split(".");
 });
 
+// =====================================================================================
+import { getBingWallpaper } from "@/api";
+// 获取bing数据
+const bingData = reactive({
+  copyright: import.meta.env.VITE_DESC_HELLO,
+  title: import.meta.env.VITE_DESC_TEXT,
+});
+try {
+  const result = await getBingWallpaper();
+  bingData.copyright = result.copyright;
+  bingData.title = result.title;
+} catch (error) {
+  ElMessage({
+    message: "bing获取失败",
+    icon: h(Error, {
+      theme: "filled",
+      fill: "#efefef",
+    }),
+  });
+  bingData.copyright = import.meta.env.VITE_DESC_HELLO;
+  bingData.title = import.meta.env.VITE_DESC_TEXT;
+};
+
 // 简介区域文字
 const descriptionText = reactive({
-  hello: import.meta.env.VITE_DESC_HELLO,
-  text: import.meta.env.VITE_DESC_TEXT,
+  // hello: import.meta.env.VITE_DESC_HELLO,
+  // text: import.meta.env.VITE_DESC_TEXT,
+  hello: bingData.title,
+  text:bingData.copyright,
 });
+// =====================================================================================
 
 // 切换右侧功能区
 const changeBox = () => {
