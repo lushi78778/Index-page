@@ -49,6 +49,22 @@ export const getHitokoto = async () => {
   return await res.json();
 };
 
+// 获取 bing wallpaper
+export const getBingWallpaper = async (mkt = "zh-CN") => {
+  const url = "https://api-cf.ewlgc.top/bing-wallpaper";
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ mkt }),
+  };
+
+  const res = await fetch(url, options);
+  return await res.json();
+};
+
+
 /**
  * 天气
  */
