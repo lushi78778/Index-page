@@ -1,5 +1,5 @@
 {
-  "name": "home",
+  "name": "index-page",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
