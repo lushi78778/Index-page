@@ -16,7 +16,12 @@
   },
   {
     "icon": "LaptopCode",
-    "name": "站点监测",
+    "name": "主机监测",
     "link": "http://host.ewlgc.top/"
+  },
+  {
+    "icon": "LaptopCode",
+    "name": "站点监测",
+    "link": "https://pages-status.ewlgc.top/"
   }
 ]
